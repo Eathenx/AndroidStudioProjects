@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zmct_mz1qhoxw_p9nsgnwa"
+    tools:context=".Menu">
+
+    <TextView
+    android:id="@+id/text_title_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="Practica Calificaciones"
+    android:textColor="#9E3A38"
+    android:textSize="32sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_materias"
+        android:layout_width="295dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00000000"
+        android:text="Materias"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:cornerRadius="97.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_menu"
+        app:strokeColor="#9E3A38"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button_alumnos"
+        android:layout_width="295dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00000000"
+        android:text="Alumnos"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:cornerRadius="97.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_materias"
+        app:strokeColor="#9E3A38"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button_calificaciones"
+        android:layout_width="295dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00000000"
+        android:text="Calificaciones"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:cornerRadius="97.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_alumnos"
+        app:strokeColor="#9E3A38"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="750dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calificaciones"
+        app:srcCompat="@drawable/gaming_wish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

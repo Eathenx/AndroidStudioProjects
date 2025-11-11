@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matricula">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Carrera"
+        >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/Btn6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Cons_Data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="insert" />
+
+        <Button
+            android:id="@+id/Btn2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="List" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/Btn4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+    </LinearLayout>
+
+</LinearLayout>

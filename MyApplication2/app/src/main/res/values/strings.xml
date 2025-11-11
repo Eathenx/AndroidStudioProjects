@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txt_btn_menu_1">boton1</string>
+    <string name="txt_btn_menu_2">boton2</string>
+    <string name="txt_btn_menu_3">Cargar Imagen</string>
+    <string name="txt_btn_menu_4">Spinner</string>
+</resources>

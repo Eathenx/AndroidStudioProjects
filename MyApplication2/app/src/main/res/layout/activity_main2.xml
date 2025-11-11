@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="347dp"
+        android:layout_height="337dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/sticker_ppg_08_dan_heng__3f_imbibitor_lunae_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/img_mrg"
+            android:layout_weight="1"
+            tools:src="@drawable/converted_imagen_de_whatsapp_2025_08_23_a_las_01_37_47_a8ef468e"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/img_mrg"
+            android:layout_weight="1"
+            tools:src="@drawable/caleus"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/img_mrg"
+            android:layout_weight="1"
+            tools:src="@drawable/perro"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/_hlmaodxq_s1gynwftdvsq"
+    tools:context=".MainActivity">
+    <TextView
+    android:id="@+id/text_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:text="Practica Calificaciones"
+    android:textColor="#9E3A38"
+    android:textSize="32sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="300dp"
+        android:text="Usuario"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Ingrese usuario"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/text_user_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_user_label"
+        app:layout_constraintTop_toTopOf="@+id/text_user_label" />
+
+    <TextView
+        android:id="@+id/text_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/text_user_label"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_label" />
+
+
+    <EditText
+
+        android:id="@+id/edit_text_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Ingrese contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/text_password_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_password_label"
+        app:layout_constraintTop_toTopOf="@+id/text_password_label" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="148dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#9E3A38"
+        android:drawableLeft="@drawable/baseline_login_24"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_user_label" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:backgroundTint="#9E3A38"
+        android:layout_width="148dp"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/baseline_cookie_24"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_password"
+        app:layout_constraintTop_toTopOf="@+id/button_login"
+        app:strokeColor="#9E3A38"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

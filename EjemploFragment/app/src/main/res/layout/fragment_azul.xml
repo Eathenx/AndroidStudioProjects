@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263078"
+    tools:context=".FragmentAzul">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@drawable/ezgif_1f4c786ef308f6"/>
+
+</FrameLayout>
