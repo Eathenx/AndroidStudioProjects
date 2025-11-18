@@ -13,6 +13,14 @@ data class Categoria(
         val datos
             get() = arrayListOf(
                 Categoria(
+                    "Tecnología",
+                    "technology"
+                ),
+                Categoria(
+                    "Videojuegos",
+                    "gaming"
+                ),
+                Categoria(
                     "Negocios",
                     "business"
                 ),
@@ -23,6 +31,18 @@ data class Categoria(
                 Categoria(
                     "General",
                     "general"
+                ),
+                Categoria(
+                    "Música",
+                    "music"
+                ),
+                Categoria(
+                    "Ciencia y Naturaleza",
+                    "science-and-nature"
+                ),
+                Categoria(
+                    "Deportes",
+                    "sport"
                 )
             )
     }

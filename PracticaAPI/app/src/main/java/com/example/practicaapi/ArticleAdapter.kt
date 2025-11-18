@@ -1,5 +1,6 @@
 package com.example.practicaapi
 
+import android.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -46,7 +47,32 @@ class ArticleAdapter: RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>(){
             if (!article.urlToImage.isNullOrEmpty()) {
                 Picasso.get().load(article.urlToImage).into(image)
             } else {
-                image.setImageResource(R.drawable.ic_launcher_background) // Imagen de placeholder
+                image.setImageResource(R.drawable.ic_launcher_background)
+            }
+
+            itemView.setOnClickListener {
+                val context = itemView.context
+                val dialogView = LayoutInflater.from(context).inflate(R.layout.detalles, null)
+                val dialogImage = dialogView.findViewById<ImageView>(R.id.dialog_image)
+                val dialogTitle = dialogView.findViewById<TextView>(R.id.dialog_title)
+                val dialogDescription = dialogView.findViewById<TextView>(R.id.dialog_description)
+
+                dialogTitle.text = article.title
+                dialogDescription.text = article.description ?: "No description available"
+
+                if (!article.urlToImage.isNullOrEmpty()) {
+                    Picasso.get().load(article.urlToImage).into(dialogImage)
+                } else {
+                    dialogImage.setImageResource(R.drawable.ic_launcher_background)
+                }
+
+                AlertDialog.Builder(context)
+                    .setView(dialogView)
+                    .setPositiveButton("Close") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                    .create()
+                    .show()
             }
         }
     }
