@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btn3: Button
     lateinit var btn4: Button
 
-    var url: String = "http://192.168.137.12/Android/BDescuela/"
+    var url: String = "http://192.168.15.135/Android/BDescuela/"
     lateinit var requestQueue: RequestQueue
     lateinit var stringRequest: StringRequest
 
@@ -59,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         btn1.setOnClickListener {
             guardar()
         }
-
         btn2.setOnClickListener {
             consultar(edt1.text.toString())
         }
@@ -217,4 +216,6 @@ class MainActivity : AppCompatActivity() {
 
         requestQueue.add(stringRequest)
     }
+
+
 }
